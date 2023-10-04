@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F0F0F0;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333333;
+        }
+
+        .jumbotron {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 0;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #333333;
+        }
+
+        .carousel-indicators li {
+            background-color: #333333;
+            border: 1px solid #ffffff;
+        }
+
+        .noticia-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .noticia-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ver-mas-link {
+            color: #58B2AF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="equipo.html">Equipo</a>
+            <a class="navbar-brand" href="noticias.html">Noticias</a>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Últimas Noticias</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div id="noticiasCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#noticiasCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="1"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="2"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="3"></li>
+                <li data-target="#noticiasCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="noticia-card">
+                        <img src="images/noticia1.jpg" alt="Noticia 1">
+                        <h5>Noticia 1</h5>
+                        <p class="noticia-text">Texto de la Noticia 1.</p>
+                        <a href="#" class="ver-mas-link" data-toggle="modal" data-target="#modalNoticia1">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="noticia-card">
+                        <img src="images/noticia2.jpg" alt="Noticia 2">
+                        <h5>Noticia 2</h5>
+                        <p class="noticia-text">Texto de la Noticia 2.</p>
+                        <a href="#" class="ver-mas-link" data-toggle="modal" data-target="#modalNoticia2">Ver más</a>
+                    </div>
+                </div>
+                <!-- Agregar más noticias de la misma manera -->
+            </div>
+            <a class="carousel-control-prev" href="#noticiasCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#noticiasCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modales de Noticias -->
+    <!-- Modal Noticia 1 -->
+    <div class="modal fade" id="modalNoticia1" tabindex="-1" role="dialog" aria-labelledby="modalNoticia1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNoticia1Label">Noticia 1 - Detalles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Detalles de la Noticia 1.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar más modales de noticias de la misma manera -->
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

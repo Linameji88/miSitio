@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .navbar {
+            background-color: #58B2AF;
+        }
+
+        .jumbotron {
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .jumbotron::after {
+            content: "";
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="equipo.html">Equipo</a>
+            <a class="navbar-brand" href="noticias.html">Noticias</a>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Frase alusiva al tema del proyecto</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="bg-white p-4">
+                    <h2>Contenido Principal</h2>
+                    <p>Primer párrafo de texto.</p>
+                    <p>Segundo párrafo de texto.</p>
+                    <p>Tercer párrafo de texto.</p>
+                    <div class="embed-responsive embed-responsive-16by9 mt-4">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K5pkkuiyRzk" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
